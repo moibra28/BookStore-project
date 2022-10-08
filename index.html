@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- This meta is for bla bla bla -->
+  <meta charset="UTF-8" />
+  <meta name="description" content="This Is Our Book Store" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/17f9772b42.js" crossorigin="anonymous"></script>
+  <!-- Fontawsome -->
+  <link rel="stylesheet" href="Css/all.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Book Store</title>
+</head>
+<body>
+  <header>
+    <!-- start topnav -->
+    <div class="topnav">
+      <!-- <div class="container-fluid"> -->
+        <div class="row text-center">
+          <div class="col-sm-6 col-lg-2 d-flex justify-content-center">
+            <div class="ilogo">
+              <a class=logo href="file:///F:/my%20projects/bookstore/index.html">
+              <image src="images/IQRA.png" alt="IQRA Logo" style="width:190px;">
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-6 d-flex align-items-center justify-content-center first-searchbox">
+            <div class="searchbox">
+              <form>
+                <input type="text" class="input" placeholder="Enter keyword, title, author or ISBN">
+                <button class="searchbtn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 d-flex align-items-center justify-content-center account-nav1">
+            <div class="account-nav">
+                <ul class="nav">
+                  <li class="topli nav-item"><a class="nav-link" id="sign in" href="#signin">Hi! <strong>Sign in</strong></a></li>
+                  <li class="topli nav-item"><a class="nav-link" id="My account" href="#Myaccount">My account</a></li>
+                  <li class="topli nav-item"><a class="nav-link" id="cart" href="#cart" title="view your shoping cart"> Basket
+                    <i class="fa-brands fa-opencart"></i>
+                  </a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end top nav  -->
+    <!-- start global nav  -->
+    <nav class="navbar navbar-expand-lg global-nav">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">NEW</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Most selling</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">كتب عربية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" tabindex="-1">About</a>
+            </li>
+          </ul>
+          <form class="d-flex sec-searchbar">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="height: 35px;">
+            <button class="searchbtn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- end global nav  -->
+  <!-- start sign in  -->
+  <div class="container-fluid">
+      <div class="sign-in">
+        <h2 style="padding-bottom: 15px;padding-top: 15px;">Sign in</h2>
+        <form action="/action_page.php" method="post">
+          <div class="container">
+            <label class="flabel" for="email"><b>Email</b></label>
+            <input class="finput" type="text"  placeholder="Enter Email adress" name="email" required>
+            <div class="row">
+            <label class="flabel" for="psw"><b>Password</b></label>
+            <div class="forgot">
+              <a class="forgotlink" href="#">Forgot your password?</a>
+            </div>
+            </div>
+            <input class="finput" type="password" placeholder="Enter Password" name="psw" required>
+            <button class="signbut" type="submit">Sign in</button>
+            <label class="slabel">
+              <input class="sinput" type="checkbox" name="rememberme">Keep me signed in.
+            </label>
+            <div id="leagltextrow">
+              By signing-in, you agree to the IQRA.com 
+              <a class="leagl" href="#"> Privacy Policy</a>
+              and
+              <a class="leagl" href="#">Terms & Conditions.</a>
+            </div>
+          </div>
+          <h5><span>New to IQRA?</span></h5>
+          <div class="accbtn">
+          <a class="secbtn" href="#">Creat your IQRA account</a>
+          </div>
+        </form>
+      </div>
+      <div class="iqra-content">
+        <section class="fsec">
+          <div class="intro">
+            <img class="image img-fluid" src="images/img3.jpg" data-image-size="leadPromoCarouselGImage" alt="bookshelf">
+            <h1>Choose your favourite book.</h1>
+            <p>From award winners and bestsellers to debut novels, 
+            discover our top 30 picks for the best fiction and nonfiction books of 2021.
+            Did your favorite make the cut?</p>
+            <a class="intro-link" href="#">See the books <span style="font-size: 20px;">&#8594;</span></a>
+          </div>
+        </section>
+      </div>
+  </div>
+  <!-- end first section  -->
+  <!-- start second section  -->
+    <section class="ssection">
+      <div class="recomandded-items">
+        <h2 class="recomandded-books">Recomandded itmes for you</h2>
+        <ul class="recomandded">
+          <li class="book1">
+            <a href="#book1">
+              <img src="images/book1.jpg" alt="book">
+              <div class="book-name">How Beautiful We Were behold the dreamers</div>
+              <div class="author-name">Mbue, Imbolo</div>
+            </a>
+          </li>
+          <li class="book2">
+            <a href="#book2">
+              <img src="images/book2.jpg" alt="book">
+              <div class="book-name">Intimacies: A Novel katie you would like again</div>
+              <div class="author-name">Kitamura, Katie</div>
+            </a>
+          </li>
+          <li class="book3">
+            <a href="#book3">
+              <img src="images/book3.jpg" alt="book">
+              <div class="book-name">No One Is Talking About This Patricia lockwood</div>
+              <div class="author-name">Lockwood, Patricia</div>
+            </a>
+          </li>
+          <li class="book4">
+            <a href="#book4">
+              <img src="images/book4.jpg" alt="book">
+              <div class="book-name">The Love Songs of W.E.B. DU BOIS NOVEL for you</div>
+              <div class="author-name">Jeffers, Honoree Fanonne</div>
+            </a>
+          </li>
+          <li class="book5">
+            <a href="#book5">
+              <img src="images/book5.jpg" alt="book">
+              <div class="book-name">On Juneteenth winners of the prize a Novel</div>
+              <div class="author-name">Gordon-Reed, Annette</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- end second section  -->
+    <!-- start third section  -->
+    <section class="third-section">
+      <div class="section-image">
+        <a href="#rare">
+          <img  src="images/rare.jpg" alt="rare books" style="width: 575px;height: 431px;border-radius: 8px;" >
+        </a>
+      </div>
+      <div class="section-content">
+        <div class="content-category">
+          <a href="#category">RARE BOOKS</a>
+        </div>
+        <div class="section-title">
+          <a href="#title">IQRA' most expensive sales in 2021</a>
+        </div>
+        <div class="section-descraption">
+          Discover IQRA' most expensive sales in 2021. This list includes a rare illustrated book from the Wild West containing a grim reminder that crime doesn’t pay, an autograph letter from a German author whose writing inspired one of the great ballets, and life advice from Yoko Ono.
+        </div>
+        <div class="third-section-btn">
+          <a href="#btn">see the list</a>
+        </div>
+      </div>
+    </section>
+    <!-- end third section  -->
+    <!-- start fourth section  -->
+    <section class="fourth-section">
+        <div class="listcard-items">
+          <div class="fourth-section-image">
+            <img src="images/card1.jpg" alt="list card">
+          </div>
+          <div class="fourth-section-content">
+            <div class="fourth-section-title">
+              <a href="#title">Used Books</a>
+            </div>
+            <div class="fourth-section-descreption">
+              Giving used books new life is what we do best. The choice of used books is massive - from classic novels to cookbooks, children's books, and so much more.
+            </div>
+            <div class="fourth-section-go">
+              <a href="#go">Search for used books</a>
+            </div>
+          </div>
+        </div>
+        <div class="listcard-items">
+          <div class="fourth-section-image">
+            <img src="images/card2.jpg" alt="list card">
+          </div>
+          <div class="fourth-section-content">
+            <div class="fourth-section-title">
+              <a href="#title">Seller Sales</a>
+            </div>
+            <div class="fourth-section-descreption">
+              Each month, select sellers offer their items for sale on IQRA at huge discounts, making it easy to buy books, art and collectibles online all over the world.
+            </div>
+            <div class="fourth-section-go">
+              <a href="#go">Start saving</a>
+            </div>
+          </div>
+        </div>
+        <div class="listcard-items">
+          <div class="fourth-section-image">
+            <img src="images/card3.jpg" alt="list card">
+          </div>
+          <div class="fourth-section-content">
+            <div class="fourth-section-title">
+              <a href="#title">Rare Books</a>
+            </div>
+            <div class="fourth-section-descreption">
+              Trusted independent sellers from around the world offer for sale curated rare books, first editions and collectible signed copies of your favorite book.
+            </div>
+            <div class="fourth-section-go">
+              <a href="#go">Discover rare books</a>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- end fourth section  -->
+    <!-- start section  -->
+    <section class="ssection" style="padding-bottom: 50px;">
+      <div class="recomandded-items">
+        <h2 class="recomandded-books">Trending items</h2>
+        <ul class="recomandded">
+          <li class="book1">
+            <a href="#book1">
+              <img src="images/book6.jpg" alt="book">
+              <div class="book-name">All About Love: New Visions a new bell hooks</div>
+              <div class="author-name">Bell Hooks</div>
+            </a>
+          </li>
+          <li class="book2">
+            <a href="#book2">
+              <img src="images/book7.jpg" alt="book">
+              <div class="book-name">I Like This Poem (Puffin Poetry) a classic one</div>
+              <div class="author-name">Webb, Kaye</div>
+            </a>
+          </li>
+          <li class="book3">
+            <a href="#book3">
+              <img src="images/book8.jpg" alt="book">
+              <div class="book-name">Hollywood's Eve: Eve Babitz and the Secret Histor</div>
+              <div class="author-name">Anolik, Lili</div>
+            </a>
+          </li>
+          <li class="book4">
+            <a href="#book4">
+              <img src="images/book9.jpg" alt="book">
+              <div class="book-name">The Real Anthony Fauci: Bill Gates, Big Pharma</div>
+              <div class="author-name">Kennedy Jr., Robert F.</div>
+            </a>
+          </li>
+          <li class="book5">
+            <a href="#book5">
+              <img src="images/book10.jpg" alt="book">
+              <div class="book-name">Invisible Child: Poverty, Survival & Hope in an American</div>
+              <div class="author-name">Ditlevsen, Tove</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- end section  -->
+    <!-- start fifth section  -->
+    <section class="fifth-section">
+        <div class="listcardB-items">
+          <div class="fifth-section-image">
+            <a href="#card4">
+              <img src="images/card4.webp" alt="list card">
+            </a>
+          </div>
+          <div class="fifth-section-content">
+            <div class="fifth-section-title">
+              <a href="#title">Independent sellers</a>
+            </div>
+            <div class="fifth-section-descreption">
+              Millions of books and other items are listed for sale on IQRA by trusted sellers from around the <br>world.
+            </div>
+            <div class="fifth-section-go">
+              <a href="#go">Meet some sellers</a>
+            </div>
+          </div>
+        </div>
+        <div class="listcardB-items">
+          <div class="fifth-section-image">
+            <a href="#card5">
+              <img src="images/card5.webp" alt="list card">
+            </a>
+          </div>
+          <div class="fifth-section-content">
+            <div class="fifth-section-title">
+              <a href="#title">Not just books</a>
+            </div>
+            <div class="fifth-section-descreption">
+              We're known for our epic selection of new, used, and rare books, but we also sell fine art & <br>collectibles.
+            </div>
+            <div class="fifth-section-go">
+              <a href="#go">Browse art & collectibles</a>
+            </div>
+          </div>
+        </div>
+        <div class="listcardB-items">
+          <div class="fifth-section-image">
+            <a href="#card6">
+              <img src="images/card6.webp" alt="list card">
+            </a>
+          </div>
+          <div class="fifth-section-content">
+            <div class="fifth-section-title">
+              <a href="#title">Feel the love</a>
+            </div>
+            <div class="fifth-section-descreption">
+              We asked customers to tell us why they love shopping on IQRA and we were overwhelmed by their kind <br>words.
+            </div>
+            <div class="fifth-section-go">
+              <a href="#go">Read customer stories</a>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- end fifth section  -->
+    <!-- start footer  -->
+  <footer>
+    <div class="footer-container">
+      <div>
+        <a class="to-top" href="#">Back to top</a>
+      </div>
+      <div id="site-links" class="container">
+        <div class="row">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="footer-col">
+              <h4>Shop With Us</h4>
+              <ul class="list-unstyled lh-lg">
+                <li><a href="#a">Advanced Search</a></li>
+                <li><a href="#b">Browse Collections</a></li>
+                <li><a href="#m">My Account</a></li>
+                <li><a href="#m">My Orders</a></li>
+                <li><a href="#v">View Basket</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="footer-col">
+              <h4>Sell With Us</h4>
+              <ul class="list-unstyled lh-lg">
+                <li><a href="#s">Start Selling</a></li>
+                <li><a href="#j">Join Our Affiliate Program</a></li>
+                <li><a href="#b">Book Buyback</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="footer-col">
+              <h4>About Us</h4>
+              <ul class="list-unstyled lh-lg">
+                <li><a href="#a">About IQRA</a></li>
+                <li><a href="#m">Media</a></li>
+                <li><a href="#c">Careers</a></li>
+                <li><a href="#p">Praivcy Policy</a></li>
+                <li><a href="#d">Designated Agent</a></li>
+                <li><a href="#a">Designated Agent</a></li>
+                <li><a href="#a">Accessibility</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="footer-col">
+              <h4>Find Help</h4>
+              <ul class="list-unstyled lh-lg">
+                <li><a href="#h">Help</a></li>
+                <li><a href="#c">Customer Support</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3"></div>
+            <div class="footer-col">
+              <h4>Follow IQRA</h4>
+              <ul class="list-unstyled lh-lg">
+                <li><a href="#f">Facebook</a></li>
+                <li><a href="#i">Instgram</a></li>
+                <li><a href="#y">youtube</a></li>
+                <li><a href="#t">twitter</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <img class="footer-logo" src="images/IQRa.png" alt="IQRA logo">
+      </div>
+      <div class="creaitor">Created By Mohamed Ibrahim.</div>
+      <div class="footer-legal">
+        <small>By using the Web site, you confirm that you have read, understood, and agreed to be bound by the <a href="#" title="Terms and Conditions">Terms&nbsp;and&nbsp;Conditions</a>.<br><br>© IQRA Inc. All Rights Reserved. IQRA, the IQRA logo, IQRA.com, "Passion for books." and "Passion for books. Books for your passion." are registered trademarks with the <br>Registered EG Patent &amp; Trademark Office.</small>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer  -->
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- fontawsome  -->
+  <script src="js/all.min.js"></script>
+</body>
+</html>
